@@ -1,0 +1,41 @@
+import java.util.*;
+class Test
+{
+public static void main(String...s)
+{
+	String name;
+	int rollnum;
+	float eng, phy, che, math,hindi;
+	double total, percentage; 
+	
+	Scanner sc = new Scanner(System.in); 
+	System.out.println("Enter the student name");
+	 name=sc.nextLine(); 
+	 System.out.println("Enter the roll number");
+	 rollnum=sc.nextInt();
+	 
+	 System.out.println("Enter the five subject mark");
+	 
+	 System.out.println("Enter the english mark");
+	 eng = sc.nextFloat();
+	 System.out.println("Enter the physics mark");
+	 phy = sc.nextFloat();
+	 System.out.println("Enter the chemistry mark");
+	 che = sc.nextFloat();
+	 System.out.println("Enter the math mark");
+	 math = sc.nextFloat();
+	 System.out.println("Enter the hindi mark");
+	 hindi = sc.nextFloat();
+	 total = eng+ phy+che+math+hindi;
+	 
+	 percentage = (total/500)*100;
+	 
+	 System.out.println("Total marks = "+total);
+
+	 System.out.println("Percentage = " +percentage);
+	 
+	 
+	
+	
+}
+}
